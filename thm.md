@@ -7,4 +7,4 @@ title: "Tryhackme"
 ## Coming soon...
 [Basic Pentesting](/posts/thm/basic-pentesting) <br />
 [Blue](/posts/thm/blue) <br />
-
+[Daily Bugle](/posts/thm/daily-bugle) <br />
