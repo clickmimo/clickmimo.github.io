@@ -8,4 +8,4 @@ title: "Tryhackme"
 [Test](/posts/thm/test)
 
 ---
-[Basic Pentesting](/posts/thm/besic-pentesting)
+[Basic Pentesting](/posts/thm/basic-pentesting)
