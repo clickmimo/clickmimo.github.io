@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+<small>{{ page.date | date: "%-d %B %Y" }}</small>
+<h1>{{ page.title }}</h1>
+<b>{% include reading-time.html %}</b>
+
+{{content}}
+
+{% if page.tags %}
+  <small>tags: <em>{{ page.tags | join: "</em> - <em>" }}</em></small>
+{% endif %}
+
+<hr>
+
+<h3>Contacts</h3>
+<a href="https://github.com/clickmimo"><i class="fab fa-github fa-2x"></i></a>
+<a href="mailto:maringeorgiev303@gmail.com"><i class="fas fa-envelope fa-2x"></i></a>
+
+<hr>
+<footer style="float:left;"><small>&copy; {{ site.footer_left }}</small></footer>
