@@ -5,7 +5,5 @@ title: "Tryhackme"
 ---
 
 ## Coming soon...
-[Test](/posts/thm/test)
-
----
-[Basic Pentesting](/posts/thm/basic-pentesting)
+[Basic Pentesting](/posts/thm/basic-pentesting) <br />
+[Blue](/posts/thm/blue) <br />
