@@ -16,7 +16,7 @@ There are 3 open ports: 22, 80 and 3306. Visit the website
 
 ![website](/assets/images/thm/daily-bugle/website.png)
 
-Wow.. Spider-man is accused of robbery. We don't have any additional imformation. Lets scan the target with Gobuster.
+Wow.. Spider-man is accused of robbery. We don't have any additional imformation. Let's scan the target with Gobuster.
 
 ![gobuster](/assets/images/thm/daily-bugle/gobuster.png)
 
@@ -24,7 +24,7 @@ We have found that there is /administrator page.
 
 ![login-form](/assets/images/thm/daily-bugle/login-form.png)
 
-We know the web site uses CMS Joomla. Lets use joomlascan.
+We know the web site uses CMS Joomla. Let's use joomlascan.
 
 ```
 /opt/joomscan/joomscan.pl -u http://10.10.255.36
@@ -50,7 +50,7 @@ sqlmap -u "http://10.10.255.36/index.php?option=com_fields&view=fields&layout=mo
 
 ![sqlmap1](/assets/images/thm/daily-bugle/sqlmap1.png)
 
-Lets try to find the credentials in joomla. We can find the table name in the joomla documentations: https://docs.joomla.org/Tables/users
+Let's try to find the credentials in joomla. We can find the table name in the joomla documentations: https://docs.joomla.org/Tables/users
 
 ![joomla-table](/assets/images/thm/daily-bugle/joomla-table.png)
 
@@ -123,11 +123,11 @@ cd /dev/shm
 
 ![linpeas](/assets/images/thm/daily-bugle/linpeas.png)
 
-Linpeas found clear text password and we had found username jjameson in /home. Lets try to ssh with this password nv5uz9r3ZEDzVjNu
+Linpeas found clear text password and we had found username jjameson in /home. Let's try to ssh with this password nv5uz9r3ZEDzVjNu
 
 ![ssh](/assets/images/thm/daily-bugle/ssh.png)
 
-Lets find out if jjameson is allowed to do something as another user
+Let's find out if jjameson is allowed to do something as another user
 
 ![sudo-l](/assets/images/thm/daily-bugle/sudo-l.png)
 
