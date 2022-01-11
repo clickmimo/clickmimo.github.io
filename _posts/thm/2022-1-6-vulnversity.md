@@ -4,7 +4,7 @@ permalink: /posts/thm/vulnversity
 title: "Vulnversity"
 ---
 
-Here is another enjoyable room. As always lets scan the target machine with nmap.
+Here is another enjoyable room. As always let's scan the target machine with nmap.
 
 ```
 nmap -sC -sV <machine-ip>
