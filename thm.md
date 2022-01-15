@@ -15,5 +15,6 @@ TryHackMe is an amazing online platform for learning cyber security with theory 
 [Game Zone](/posts/thm/game-zone) <br />
 [Hackpark](/posts/thm/hackpark) <br />
 [Mr Robot](/posts/thm/mr-robot) <br />
+[Root me](/posts/thm/root-me) <br />
 [Skynet](/posts/thm/skynet) <br />
 [Vulnversity](/posts/thm/vulnversity) <br />
