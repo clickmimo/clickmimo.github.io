@@ -99,4 +99,4 @@ sudo -l
 
 Wow we have the right to execute any commands with as root without password
 
-![3rd](/assets/images/thm/pickle-rick/3rd.png
+![3rd](/assets/images/thm/pickle-rick/3rd.png)
