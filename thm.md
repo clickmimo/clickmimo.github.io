@@ -11,6 +11,7 @@ TryHackMe is an amazing online platform for learning cyber security with theory 
 ---
 [Basic Pentesting](/posts/thm/basic-pentesting) <br />
 [Blue](/posts/thm/blue) <br />
+[Bounty Hacker](/posts/thm/bounty-hacker) <br />
 [Daily Bugle](/posts/thm/daily-bugle) <br />
 [Game Zone](/posts/thm/game-zone) <br />
 [Hackpark](/posts/thm/hackpark) <br />
