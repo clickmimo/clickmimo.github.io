@@ -14,7 +14,7 @@ nmap -sC -sV <IP>
 
 ![nmap](/assets/images/thm/bounty-hacker/nmap.png)
 
-Good! From the nmap scan we can see there are open ports 21 FTP, 22 SSH and 80 HTTP. We have to find a task list now which probably will be located at the FTP server. You can notice from the nmap result that anonymous login is allowed. Go and visit the FTP server.
+Good! From the nmap scan we can see there are open ports 21 FTP, 22 SSH and 80 HTTP. Now we need to find a task list which will probably be located on the FTP server. You can notice from the nmap result that anonymous login is allowed. Go and visit the FTP server.
 
 ```
 ftp <IP>
@@ -46,7 +46,7 @@ ssh lin@<IP>
 
 ![shell](/assets/images/thm/bounty-hacker/shell.png)
 
-Here is the first flag. Now we need to find way to escalate our privileges. The first thing that I awlays check is whther the current user has any permissions to execute sudo commands.
+Here is the first flag. Now we need to find way to escalate our privileges. The first thing that I awlays check is whether the current user has any permissions to execute sudo commands.
 
 ```
 sudo -l
@@ -58,7 +58,7 @@ We are in luck. Lin user has the right to execute `/bin/tar` as sudo. Go and vis
 
 ![gtfobins](/assets/images/thm/bounty-hacker/gtfobins.png)
 
-Yes, it is simple as that, just copy the command and execute it and you will have root acces.
+Yes, it is as simple as that, just copy the command and execute it and you will have root acces.
 
 ```
 sudo tar -cf /dev/null /dev/null --checkpoint=1 --checkpoint-action=exec=/bin/sh
