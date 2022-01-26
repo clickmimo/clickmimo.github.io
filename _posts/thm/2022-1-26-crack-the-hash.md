@@ -4,7 +4,7 @@ permalink: /posts/thm/crack-the-hash
 title: "Crack the hash"
 ---
 
-Today we are going to crack some hashes. We will need a software to be able to identify different type of jashes. I'm going to use that one `https://gitlab.com/kalilinux/packages/hash-identifier/`. You can download it with the following commnad
+Today we are going to crack some hashes. We will need a software to be able to identify different type of jashes. I'm going to use that one `https://gitlab.com/kalilinux/packages/hash-identifier/`. You can download it with the following command
 
 ```
 wget https://gitlab.com/kalilinux/packages/hash-identifier/-/raw/kali/master/hash-id.py
@@ -70,7 +70,7 @@ After some research I find that I have to add backwardslashes before $ symbol `\
 awk 'length < 5' rockyou.txt > rockyou4.txt
 ```
 
-This command will take the words which are less than 5 symbols and it will write it into new wordlist. Now are good to execute the hashcat.
+This command will take the words which are less than 5 symbols and it will write it into new wordlist. Now we are good to execute the hashcat.
 
 ```
 hashcat -m 3200 hash.txt rockyou4.txt 
@@ -92,7 +92,7 @@ We weren't able to crack it, probably the password is not in the rockyou file. L
 
 ![crackstation](/assets/images/thm/crack-the-hash/crackstation.png)
 
-At this moment I realized that `https://hashes.com` has already cracked the hash :D :D sometimes I'm not able to see the answer even if it infront of me. Whatever we are done with the first part of the challenge.
+At this moment I realized that `https://hashes.com` has already cracked the hash :D :D sometimes I'm not able to see the answer even if it infront of me. Whatever, we are done with the first part of the challenge.
 
 Task 2 Hash 1: `F09EDCB1FCEFC6DFB23DC3505A882655FF77375ED8AA2D1C13F640FCCC2D0C85`
 
@@ -104,7 +104,7 @@ Hash 2: `1DFECA0C002AE40B8619ECF94819CC1B`
 
 ![crackstation-hash2](/assets/images/thm/crack-the-hash/crackstation-hash2.png)
 
-Again crackstation is good enough to crack the password.
+Again crackstation was good enough to crack the password.
 
 Hash 3: `$6$aReallyHardSalt$6WKUTqzq.UQQmrm0p/T7MPpMbGNnzXPMAXi4bJMl9be.cfi3/qxIf.hsGpS41BqMhSrHVXgMpdjS6xeKZAs02.`
 
@@ -112,7 +112,7 @@ This time we are not able to crack it with crackstation. Identify the hash type.
 
 ![sha512-id](/assets/images/thm/crack-the-hash/sha512-id.png)
 
-Copy the hash into a text file and carck with hashcat. <br/>
+Copy the hash into a text file and crack it with hashcat. <br/>
 
 This scan also will take a lot of time. Let's again generate new wordlist with max length of 6
 
@@ -126,7 +126,7 @@ hashcat -m 1800 hash.txt rockyou6.txt
 
 ![cracked-4](/assets/images/thm/crack-the-hash/cracked-4.png)
 
-Here we go. We have succefuly cracked the password.
+Here we go. We have successfully cracked the password.
 
 Hash 4: `e5d8870e5bdd26602cab8dbe07a942c8669e56d6`
 
