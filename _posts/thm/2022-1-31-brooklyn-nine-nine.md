@@ -75,7 +75,7 @@ sudo less /etc/profile
 
 Here we go, we are root. Now just find the root flag. </br>
 
-Okay we were able to find the both flags but I wasn't able to find out what is hidden inside the image. I tried all the password which I found as steghide passphrase but no one was correct. After some research I found a tool called `stegcracker` which allowed me to find out the passphrase.
+Okay we were able to find the both flags but I wasn't able to find out what is hidden inside the image. I tried all the passwords which I found as steghide passphrase but non of them was correct. After some research I found a tool called `stegcracker` which allowed me to find out the passphrase.
 
 ```
 stegcracker brooklyn99.jpg /usr/share/wordlists/rockyou.txt
