@@ -15,6 +15,7 @@ TryHackMe is an amazing online platform for learning cyber security with theory 
 [Bounty Hacker](/posts/thm/bounty-hacker) <br />
 [Brooklyn Nine Nine](/posts/thm/brooklyn-nine-nine) <br />
 [Crack the hash](/posts/thm/crack-the-hash) <br />
+[Cyborg](/posts/thm/cyborg) <br />
 [Daily Bugle](/posts/thm/daily-bugle) <br />
 [Game Zone](/posts/thm/game-zone) <br />
 [Hackpark](/posts/thm/hackpark) <br />
