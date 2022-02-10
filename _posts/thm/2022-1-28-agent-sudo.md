@@ -120,7 +120,7 @@ read the file
 
 ![7z-txt](/assets/images/thm/agent-sudo/7z-txt.png)
 
-It looks like base64. Use `https://gchq.github.io/CyberChef/` or the following command `echo "QXJlYTUx" | base64 --decode` </br>
+It looks like base64. Use `https://gchq.github.io/CyberChef/` or the following command `echo "QXJlYTUx" | base64 --decode` <br/>
 
 Let's try again steghide
 
