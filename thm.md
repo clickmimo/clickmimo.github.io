@@ -27,5 +27,6 @@ TryHackMe is an amazing online platform for learning cyber security with theory 
 [Simple CTF](/posts/thm/simple-ctf) <br />
 [Skynet](/posts/thm/skynet) <br />
 [Startup](/posts/thm/startup) <br />
+[Tomghost](/posts/thm/Tomghost) <br />
 [Vulnversity](/posts/thm/vulnversity) <br />
 [Wgel CTF](/posts/thm/wgel-ctf) <br />
