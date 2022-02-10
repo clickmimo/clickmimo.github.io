@@ -4,7 +4,7 @@ permalink: /posts/thm/brooklyn-nine-nine
 title: "Brooklyn Nine Nine"
 ---
 
-This room is aimed for beginner level hackers but anyone can try to hack this box. </br>
+This room is aimed for beginner level hackers but anyone can try to hack this box. <br/>
 
 Let's first scan the target machine for open ports.
 
