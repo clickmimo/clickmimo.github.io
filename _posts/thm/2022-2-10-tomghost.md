@@ -4,7 +4,7 @@ permalink: /posts/thm/tomghost
 title: "Tomghost"
 ---
 
-Identify recent vulnerabilities to try exploit the system or read files that you should not have access to. </br>
+Identify recent vulnerabilities to try exploit the system or read files that you should not have access to. <br/>
 
 Let's scan the target machine for open ports with nmap
 
