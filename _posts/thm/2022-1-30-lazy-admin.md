@@ -50,7 +50,7 @@ Download the mysql backup and see whether we'll be able to find any useful infor
 
 ![sql](/assets/images/thm/lazy-admin/sql.png)
 
-If you look closely you will find username `manager` with hash `42f749ade7f9e195bf475f37a44cafcb` </br>
+If you look closely you will find username `manager` with hash `42f749ade7f9e195bf475f37a44cafcb` <br/>
 
 I'm going to use `https://crackstation.net/` to crack the password.
 
@@ -76,7 +76,7 @@ Navigate to `<IP>/content/inc/ads/<YOUR_REVERSE_SHELL_FILE_NAME>`
 
 ![shell](/assets/images/thm/lazy-admin/shell.png)
 
-Good. Look around the system and find the user flag. </br>
+Good. Look around the system and find the user flag. <br/>
 
 The last thing that we have to do is to escalate our privileges. Let's check whether we are able to execute any commands as root
 
