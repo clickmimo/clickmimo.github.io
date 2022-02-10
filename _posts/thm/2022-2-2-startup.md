@@ -4,7 +4,7 @@ permalink: /posts/thm/startup
 title: "Startup"
 ---
 
-We are Spice Hut, a new startup company that just made it big! We offer a variety of spices and club sandwiches (in case you get hungry), but that is not why you are here. To be truthful, we aren't sure if our developers know what they are doing and our security concerns are rising. We ask that you perform a thorough penetration test and try to own root. Good luck! </br>
+We are Spice Hut, a new startup company that just made it big! We offer a variety of spices and club sandwiches (in case you get hungry), but that is not why you are here. To be truthful, we aren't sure if our developers know what they are doing and our security concerns are rising. We ask that you perform a thorough penetration test and try to own root. Good luck! <br/>
 
 Scan the target machine with nmap.
 
@@ -24,7 +24,7 @@ When it promped for username provide `anonymous`
 
 ![ftp](/assets/images/thm/startup/ftp.png)
 
-There are two files and one directory which is empty. You can download the files with the following command `get <FILLE_NAME>` </br>
+There are two files and one directory which is empty. You can download the files with the following command `get <FILLE_NAME>` <br/>
 
 Let's read the text file.
 
