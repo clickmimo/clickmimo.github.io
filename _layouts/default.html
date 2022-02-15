@@ -9,15 +9,36 @@
 
 	<style>
 		header h1, hr, a{
-			color: #7f6df2
+			color: #7f6df2;
+		}
+		
+		hr{
+			border-bottom: 1px dashed #7f6df2;
 		}
 		
 		header{
 			border-bottom: none;
 		}
 		
-		h2, h3, h4, h5, h6{
+		h1, h2, h3, h4, h5, h6{
 			color: #eaeaea;
+		}
+		
+		header h1::before {
+  			content: "";
+  			font-size: 24px;
+		}
+		
+		ul li:before {
+		  content: "";
+		  position: absolute;
+		  top: 1.2em;
+		  left: -30px;
+		  margin-top: -.9em;
+		  background: #7f6df2;
+		  height: 12px;
+		  width: 12px;
+		  border-radius: 50%;
 		}
 		
 		.navbar{
