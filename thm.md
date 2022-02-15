@@ -14,6 +14,7 @@ TryHackMe is an amazing online platform for learning cyber security with theory 
 [Blue](/posts/thm/blue) <br />
 [Bounty Hacker](/posts/thm/bounty-hacker) <br />
 [Brooklyn Nine Nine](/posts/thm/brooklyn-nine-nine) <br />
+[Brute it](/posts/thm/brute-it) <br />
 [Crack the hash](/posts/thm/crack-the-hash) <br />
 [Cyborg](/posts/thm/cyborg) <br />
 [Daily Bugle](/posts/thm/daily-bugle) <br />
