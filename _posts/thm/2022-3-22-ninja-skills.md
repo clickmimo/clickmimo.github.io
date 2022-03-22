@@ -6,7 +6,7 @@ title: "Ninja Skills"
 
 Practise your Linux skills and complete the challenges. <br />
 
-We have provided us some files and our goal will be to find specific information about them. Here are the files:
+We have some files and our goal will be to find specific information about them. Here are the files:
 
 ``` 
    8V2L
