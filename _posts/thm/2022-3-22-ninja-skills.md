@@ -41,7 +41,7 @@ where
 2>/dev/null - this will send all the error responds to the /dev/null
 ```
 
-For additional infomarmation about the find command you can use `man find` in your terminal. <br />
+For additional information about the find command you can use `man find` in your terminal. <br />
 
 Later I have found an other way to search for all files with a single command.
 
@@ -78,7 +78,7 @@ find / -type f -group best-group 2>/dev/null
 
 `Question 2` Which of these files contain an IP address? <br />
 
-For this one we can use regex. I'm not that familiar with it, so I just google something like `find ip addresses in a file using grep` 
+For this one we can use regex. I'm not that familiar with it, so I just googled something like `find ip addresses in a file using grep` 
 
 ```
 grep -E -o "([0-9]{1,3}[\.]){3}[0-9]{1,3}" /etc/8V2L /mnt/c4ZX /mnt/D8B3 /var/FHl1 /opt/oiMO /opt/PFbD /media/rmfX /etc/ssh/SRSq /var/log/uqyw /home/v2Vb /X1Uy
@@ -108,7 +108,7 @@ wc -l /etc/8V2L /mnt/c4ZX /mnt/D8B3 /var/FHl1 /opt/oiMO /opt/PFbD /media/rmfX /e
 
 `Question 5` Which file's owner has an ID of 502? <br />
 
-We can use `ls` command with the flag `-n` like `-l`, but list numeric user and group IDs
+We can use `ls` command with the flag `-n`, it is like `-l` but list numeric user and group IDs
 
 ```
 ls -n /etc/8V2L /mnt/c4ZX /mnt/D8B3 /var/FHl1 /opt/oiMO /opt/PFbD /media/rmfX /etc/ssh/SRSq /var/log/uqyw /home/v2Vb /X1Uy
