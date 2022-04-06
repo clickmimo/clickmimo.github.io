@@ -18,6 +18,7 @@ TryHackMe is an amazing online platform for learning cyber security with theory 
 [Crack the hash](/posts/thm/crack-the-hash) <br />
 [Cyborg](/posts/thm/cyborg) <br />
 [Daily Bugle](/posts/thm/daily-bugle) <br />
+[Fowsniff CTF](/posts/thm/fowsniff-ctf) <br />
 [Game Zone](/posts/thm/game-zone) <br />
 [Hackpark](/posts/thm/hackpark) <br />
 [Lazy Admin](/posts/thm/lazy-admin) <br />
