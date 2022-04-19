@@ -34,3 +34,4 @@ TryHackMe is an amazing online platform for learning cyber security with theory 
 [Tomghost](/posts/thm/tomghost) <br />
 [Vulnversity](/posts/thm/vulnversity) <br />
 [Wgel CTF](/posts/thm/wgel-ctf) <br />
+[Year of the Rabbit](/posts/thm/year-of-the-rabbit) <br />
