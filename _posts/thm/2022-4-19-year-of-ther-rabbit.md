@@ -66,6 +66,7 @@ Now we know the username for FTP. Copy all the found passwords and create a new 
 
 ```
 hydra -l ftpuser -P passwords ftp://<TARGET-IP>
+```
 
 ![hydra](/assets/images/thm/year-of-the-rabbit/hydra.png)
 
