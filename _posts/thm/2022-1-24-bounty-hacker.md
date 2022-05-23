@@ -20,7 +20,7 @@ Good! From the nmap scan we can see there are open ports 21 FTP, 22 SSH and 80 H
 ftp <IP>
 ```
 
-with username anonymous
+with username `anonymous`
 
 ![ftp](/assets/images/thm/bounty-hacker/ftp.png)
 
