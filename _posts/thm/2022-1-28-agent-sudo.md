@@ -14,7 +14,7 @@ nmap -sC -sV <IP>
 
 ![nmap](/assets/images/thm/agent-sudo/nmap.png)
 
-nmap result shows us that there is port 21 FTP, port 22 SSH and port 80 HTTP opened. Visit the website.
+Nmap result shows us that there is an port 21 FTP, port 22 SSH and port 80 HTTP opened. Visit the website.
 
 ![website](/assets/images/thm/agent-sudo/website.png)
 
@@ -32,7 +32,7 @@ Gobuster scan finished.
 
 ![gobuster](/assets/images/thm/agent-sudo/gobuster.png)
 
-I tried with other wordlist but I wasn't able to find anything. It took me some time until I find a way to continue. This `user-agent` looked suspicious for me so I just googled it. I found out that the user-agent is HTTP header used to identify application and opertaion system. After some aditional research I found that we can change this user-agent. The tool that can help us is Burp Suite. We also need `codename`, actually Agent R probably should be a codename. Ctach the request with Burp and change the User-Agent.
+I tried with other wordlist but I wasn't able to find anything. It took me some time until I find a way to continue. This `user-agent` looked suspicious for me so I just googled it. I found out that the user-agent is HTTP header used to identify application and opertaion system. After some aditional research I found that we can change this user-agent. The tool that can help us is Burp Suite. We also need `codename`, actually Agent R probably should be a codename. Catch the request with Burp and change the User-Agent.
 
 ![user-agent-r](/assets/images/thm/agent-sudo/user-agent-r.png)
  
@@ -40,7 +40,7 @@ Once we have changed the user-agent we can forward the request.
 
 ![website-r](/assets/images/thm/agent-sudo/website-r.png)
  
-The other agents codename shoul be a letter too. Let's try payload attack with Burp. Send the request to Intruder, go to the position tab and set the position where payloads will be inserted by copy the desired place(in our case this is user-agent) and click add button
+The other agents codename should be a letter too. Let's try payload attack with Burp. Send the request to Intruder, go to the position tab and set the position where payloads will be inserted by copy the desired place(in our case this is user-agent) and click the add button.
 
 ![payload-position](/assets/images/thm/agent-sudo/payload-position.png)
 
@@ -82,7 +82,7 @@ You can use `get <FILE_NAME>` to download the files.
 
 ![txt](/assets/images/thm/agent-sudo/txt.png)
 
-I know only one tool for image steganography, it's `exiftool`. Unfortunately this didn't help me. I searched for image steganography tools and found top 3 tool steghide, exiftool and binwalk. I have already tried exiftool so we will go and tried the others. Using steghide requered me a password.
+I know only one tool for image steganography, it's `exiftool`. Unfortunately this didn't help me. I searched for image steganography tools and found top 3 tool steghide, exiftool and binwalk. I have already tried exiftool so we will go and tried the others. Using steghide required me a password.
 
 ![steghide-password](/assets/images/thm/agent-sudo/steghide-password.png)
 
