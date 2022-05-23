@@ -14,7 +14,7 @@ nmap -sC -sV <IP>
 
 ![nmap](/assets/images/thm/brooklyn-nine-nine/nmap.png)
 
-There is open port 21 FTP, 22 SSH and 80 HTTP. Let's try whether we are able to log in FTP server with anonymous access
+There is an open port 21 FTP, 22 SSH and 80 HTTP. Let's try whether we are able to log in FTP server with anonymous access.
 
 ```
 ftp <ip>
@@ -34,7 +34,7 @@ It's just an image. Let's view the source code.
 
 ![source](/assets/images/thm/brooklyn-nine-nine/source.png)
 
-Very nice we have a commented clue, we are going to use some steganogtaphy which means there is something hide behind the image. In addition we know the path to the image go to `<ip>/brooklyn99.jpg` and download the image.
+Very nice we have a commented clue, we are going to use some steganogtaphy which means there is something hidden behind the image. In addition we know the path to the image go to `<ip>/brooklyn99.jpg` and download the image.
 
 ![image](/assets/images/thm/brooklyn-nine-nine/image.png)
 
@@ -58,13 +58,13 @@ ssh jake@10.10.130.25
 
 ![jake-ssh](/assets/images/thm/brooklyn-nine-nine/jake-ssh.png)
 
-Look around the system and you'll find the first flag. </br>
+Look around the system and you'll find the first flag. 
 
-Let's try to escalate our privileges. Execute `sudo -l` to see whether our user is able to execute any commands as root
+Let's try to escalate our privileges. Execute `sudo -l` to see whether our user is able to execute any commands as root.
 
 ![sudo-ls](/assets/images/thm/brooklyn-nine-nine/sudo-ls.png)
 
-We can execute `less` as root. Go to `https://gtfobins.github.io/gtfobins/less/` and see how we can use it to get roos access.
+We can execute `less` as root. Go to `https://gtfobins.github.io/gtfobins/less/` and see how we can use it to get root access.
 
 ```
 sudo less /etc/profile
@@ -73,7 +73,7 @@ sudo less /etc/profile
 
 ![root](/assets/images/thm/brooklyn-nine-nine/root.png)
 
-Here we go, we are root. Now just find the root flag. </br>
+Here we go, we are root. Now just find the root flag. 
 
 Okay we were able to find the both flags but I wasn't able to find out what is hidden inside the image. I tried all the passwords which I found as steghide passphrase but non of them was correct. After some research I found a tool called `stegcracker` which allowed me to find out the passphrase.
 
