@@ -9,10 +9,10 @@ title: "Tryhackme"
 TryHackMe is an amazing online platform for learning cyber security with theory and a lot of hands-on exercises. I made my first steps in cyber security thanks to this platform and it is really perfect for beginners. Here are some of the rooms which I have passed.
 
 ---
-| Writeup | Room image |
-| ------- | ---------- |
-| [Agent Sudo](/posts/thm/agent-sudo) | ![agent-sudo](/assets/images/thm/logo/agent-sudo.png) |
-| [Basic Pentesting](/posts/thm/basic-pentesting) | ![basic-pentesting](/assets/images/thm/logo/basic-pentesting.png) |
+[![agent-sudo](/assets/images/thm/logo/agent-sudo.png)](/posts/thm/agent-sudo)
+[![basic-pentesting](/assets/images/thm/logo/basic-pentesting.png)](https://clickmimo.github.io/posts/thm/basic-pentesting)
+[Agent Sudo](/posts/thm/agent-sudo)
+[Basic Pentesting](/posts/thm/basic-pentesting)
 [Blue](/posts/thm/blue) <br />
 [Bounty Hacker](/posts/thm/bounty-hacker) <br />
 [Brooklyn Nine Nine](/posts/thm/brooklyn-nine-nine) <br />
