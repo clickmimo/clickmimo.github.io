@@ -120,7 +120,7 @@ read the file
 
 ![7z-txt](/assets/images/thm/agent-sudo/7z-txt.png)
 
-It looks like base64. Use `https://gchq.github.io/CyberChef/` or the following command `echo "QXJlYTUx" | base64 --decode` <br/>
+It looks like base64. Use <https://gchq.github.io/CyberChef/> or the following command `echo "QXJlYTUx" | base64 --decode` <br/>
 
 Let's try again steghide
 
@@ -160,7 +160,7 @@ Wow, our user is able to run `/bin/bash` as any user excluding as root. We are g
 
 ![google-cve](/assets/images/thm/agent-sudo/google-cve.png)
 
-Read through the report `https://www.exploit-db.com/exploits/47502` and escalate our privilege
+Read through the report <https://www.exploit-db.com/exploits/47502> and escalate our privilege
 
 ```
 sudo -u#-1 /bin/bash
