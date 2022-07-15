@@ -54,7 +54,7 @@ sudo -l
 
 ![sudo-l](/assets/images/thm/bounty-hacker/sudo-l.png)
 
-We are in luck. Lin user has the right to execute `/bin/tar` as sudo. Go and visit our favourite site `https://gtfobins.github.io/gtfobins/tar/`
+We are in luck. Lin user has the right to execute `/bin/tar` as sudo. Go and visit our favourite site <https://gtfobins.github.io/gtfobins/tar/>
 
 ![gtfobins](/assets/images/thm/bounty-hacker/gtfobins.png)
 
