@@ -42,7 +42,7 @@ find / -user root -perm -4000
 
 ![suid](/assets/images/thm/vulnversity/suid.png)
 
-Search for prev esc https://gtfobins.github.io/gtfobins/systemctl/ <br />
+<https://gtfobins.github.io/gtfobins/systemctl/> <br />
 Keep in mind that you might need to press Enter additionally after you’ve pasted and ran the commands.
 
 ```
