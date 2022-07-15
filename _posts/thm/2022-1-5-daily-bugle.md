@@ -50,7 +50,7 @@ sqlmap -u "http://10.10.255.36/index.php?option=com_fields&view=fields&layout=mo
 
 ![sqlmap1](/assets/images/thm/daily-bugle/sqlmap1.png)
 
-Let's try to find the credentials in joomla. We can find the table name in the joomla documentations: https://docs.joomla.org/Tables/users
+Let's try to find the credentials in joomla. We can find the table name in the joomla documentations: <https://docs.joomla.org/Tables/users>
 
 ![joomla-table](/assets/images/thm/daily-bugle/joomla-table.png)
 
@@ -66,7 +66,7 @@ It looks we need to add the columns. Stop the scan, we have already had them fro
 sqlmap -u "http://10.10.255.36/index.php?option=com_fields&view=fields&layout=modal&list[fullordering]=updatexml" --risk=3 --level=5 --random-agent -D joomla -T '#__users' -C id,name,username,email,password,usertype,block,sendEmail,registerDate,lastvisitDate,activation,params --dump
 ```
 
-We found the user jonah and his hashed password. We are going to use https://hashcat.net/wiki/doku.php?id=example_hashes to identify the hash and John the Ripper to crack it.
+We found the user jonah and his hashed password. We are going to use <https://hashcat.net/wiki/doku.php?id=example_hashes> to identify the hash and John the Ripper to crack it.
 
 ![hash-code](/assets/images/thm/daily-bugle/hash-code.png)
 
@@ -131,7 +131,7 @@ Let's find out if jjameson is allowed to do something as another user
 
 ![sudo-l](/assets/images/thm/daily-bugle/sudo-l.png)
 
-go to https://gtfobins.github.io/gtfobins/yum/#sudo
+go to <https://gtfobins.github.io/gtfobins/yum/#sudo>
 
 ![gtfo](/assets/images/thm/daily-bugle/gtfo.png)
 
