@@ -4,7 +4,7 @@ permalink: /posts/thm/crack-the-hash
 title: "Crack the hash"
 ---
 
-Today we are going to crack some hashes. We will need a software to be able to identify different types of hashes. I'm going to use that one `https://gitlab.com/kalilinux/packages/hash-identifier/`. You can download it with the following command.
+Today we are going to crack some hashes. We will need a software to be able to identify different types of hashes. I'm going to use that one <https://gitlab.com/kalilinux/packages/hash-identifier/>. You can download it with the following command.
 
 ```
 wget https://gitlab.com/kalilinux/packages/hash-identifier/-/raw/kali/master/hash-id.py
@@ -18,7 +18,7 @@ python3 hash-id.py
 
 ![hash1](/assets/images/thm/crack-the-hash/hash1.png)
 
-It is `md5`. Now we are going to use hashcat to crack it. From here `https://hashcat.net/wiki/doku.php?id=example_hashes` you can see the hash mode. 
+It is `md5`. Now we are going to use hashcat to crack it. From here <https://hashcat.net/wiki/doku.php?id=example_hashes> you can see the hash mode. 
 
 ![hash-mode](/assets/images/thm/crack-the-hash/hash-mode.png)
 
@@ -46,7 +46,7 @@ hashcat -m 100 "CBFDAC6008F9CAB4083784CBD1874F76618D2A97" --force rockyou.txt
 
 ![cracked2](/assets/images/thm/crack-the-hash/cracked2.png)
 
-The third hash is '1C8BFE8F801D79745C4631D09FFF36C82AA37FC4CCE4FC946683D7B336B63032'. Unfortunately our hash identifier wasn't able to find this hash. We can try with an online identifier `https://hashes.com`.
+The third hash is '1C8BFE8F801D79745C4631D09FFF36C82AA37FC4CCE4FC946683D7B336B63032'. Unfortunately our hash identifier wasn't able to find this hash. We can try with an online identifier <https://hashes.com>.
 
 ![online-hash](/assets/images/thm/crack-the-hash/online-hash.png)
 
@@ -88,15 +88,15 @@ hashcat -m 900 "279412f945939ba78ce0758d3fd83daa" rockyou.txt
 
 ![md4-hashcat](/assets/images/thm/crack-the-hash/md4-hashcat.png)
 
-We weren't able to crack it, probably the password is not in the rockyou file. Let's try to use an online tool like `https://crackstation.net/`
+We weren't able to crack it, probably the password is not in the rockyou file. Let's try to use an online tool like <https://crackstation.net/>
 
 ![crackstation](/assets/images/thm/crack-the-hash/crackstation.png)
 
-At this moment I realized that `https://hashes.com` has already cracked the hash :D :D sometimes I'm not able to see the answer even if it is infront of me. Whatever, we are done with the first part of the challenge.
+At this moment I realized that <https://hashes.com> has already cracked the hash :D :D sometimes I'm not able to see the answer even if it is infront of me. Whatever, we are done with the first part of the challenge.
 
 Task 2 Hash 1: `F09EDCB1FCEFC6DFB23DC3505A882655FF77375ED8AA2D1C13F640FCCC2D0C85`
 
-This time I'm going to use directly `https://crackstation.net/`
+This time I'm going to use directly <https://crackstation.net/>
 
 ![crackstation-hash1](/assets/images/thm/crack-the-hash/crackstation-hash1.png)
 
