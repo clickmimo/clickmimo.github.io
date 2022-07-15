@@ -64,7 +64,7 @@ Let's try to escalate our privileges. Execute `sudo -l` to see whether our user 
 
 ![sudo-ls](/assets/images/thm/brooklyn-nine-nine/sudo-ls.png)
 
-We can execute `less` as root. Go to `https://gtfobins.github.io/gtfobins/less/` and see how we can use it to get root access.
+We can execute `less` as root. Go to <https://gtfobins.github.io/gtfobins/less/> and see how we can use it to get root access.
 
 ```
 sudo less /etc/profile
