@@ -100,7 +100,7 @@ sudo -l
 
 ![sudo-l](/assets/images/thm/simple-ctf/sudo-l.png)
 
-We are in luck, mitch user has the permssion to run vim with sudo rights. Go to `https://gtfobins.github.io/gtfobins/vim/#sudo` Just execute the first method and you'll get root access.
+We are in luck, mitch user has the permssion to run vim with sudo rights. Go to <https://gtfobins.github.io/gtfobins/vim/#sudo> Just execute the first method and you'll get root access.
 
 ![root](/assets/images/thm/simple-ctf/root.png)
 
