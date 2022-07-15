@@ -30,7 +30,7 @@ parede@fowsniff:4d6e42f56e127803285a0a7649b5ab11
 sciana@fowsniff:f7fd98d380735e859f8b2ffbbede5a7e
 ```
 
-We can use `https://crackstation.net/` to crack all the passwords. Once you have already cracked the passwords (I wasn't able to crack one of them) create two files one for `users` populated with the user names and one for `passwords` populated with the passwords. Now we can try to brute force the POP3 service using hydra.
+We can use <https://crackstation.net/> to crack all the passwords. Once you have already cracked the passwords (I wasn't able to crack one of them) create two files one for `users` populated with the user names and one for `passwords` populated with the passwords. Now we can try to brute force the POP3 service using hydra.
 
 ```
 hydra -L users -P passwords pop3://<IP>
