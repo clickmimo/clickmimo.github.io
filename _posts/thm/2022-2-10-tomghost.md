@@ -26,7 +26,7 @@ gobuster dir -u http://10.10.59.117:8080/ -w /opt/SecLists/Discovery/Web-Content
 
 ![gobuster](/assets/images/thm/tomghost/gobuster.png)
 
-Unfortunately I didn't find anything useful. I wasn't sure what is the service running on port 8009. So I just googled `Apache Jserv` and found an exploit for it `CVE-2020-1938` `https://www.exploit-db.com/exploits/49039`. I learnt that using metasploit we'll be able to read files deplyed on Tomcat. Start Metasploit and execute `search ajp` 
+Unfortunately I didn't find anything useful. I wasn't sure what is the service running on port 8009. So I just googled `Apache Jserv` and found an exploit for it `CVE-2020-1938` <https://www.exploit-db.com/exploits/49039>. I learnt that using metasploit we'll be able to read files deplyed on Tomcat. Start Metasploit and execute `search ajp` 
 
 ![ms-search](/assets/images/thm/tomghost/ms-search.png)
 
@@ -104,7 +104,7 @@ sudo -l
 
 ![sudo-l](/assets/images/thm/tomghost/sudo-l.png)
 
-We are in luck. Visit `https://gtfobins.github.io/gtfobins/zip/` and see how we can escalate our priviliges using `zip` command
+We are in luck. Visit <https://gtfobins.github.io/gtfobins/zip/> and see how we can escalate our priviliges using `zip` command
 
 ![gtfo](/assets/images/thm/tomghost/gtfo.png)
 
