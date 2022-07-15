@@ -118,11 +118,11 @@ and run it
 
 ![linpeas](/assets/images/thm/gaming-server/linpeas.png)
 
-Based on the linpeas legend if something is highlighted with red/yellow this probably will be our privilege escalation vector. Our user is in `lxd` group. I have googled `lxd exploit` and I have found this article `https://book.hacktricks.xyz/linux-unix/privilege-escalation/interesting-groups-linux-pe/lxd-privilege-escalation`.
+Based on the linpeas legend if something is highlighted with red/yellow this probably will be our privilege escalation vector. Our user is in `lxd` group. I have googled `lxd exploit` and I have found this article <https://book.hacktricks.xyz/linux-unix/privilege-escalation/interesting-groups-linux-pe/lxd-privilege-escalation>.
 
 ![hacktricks](/assets/images/thm/gaming-server/hacktricks.png)
 
-Good news for us! I have followed the steps but for some reason I wasn't able to install `distrobuilder`. Going back to the google result I have found another article `https://www.hackingarticles.in/lxd-privilege-escalation/`> Following these steps I was able to escalate our privileges.
+Good news for us! I have followed the steps but for some reason I wasn't able to install `distrobuilder`. Going back to the google result I have found another article <https://www.hackingarticles.in/lxd-privilege-escalation/> Following these steps I was able to escalate our privileges.
 
 On your attacking machine execute the following commands.
 
