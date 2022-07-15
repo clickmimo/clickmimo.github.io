@@ -88,7 +88,7 @@ Open the file.
 
 ![brain-fuck](/assets/images/thm/year-of-the-rabbit/brain-fuck.png)
 
-Wow... it's something bizarre, right? It's a `Brainfuck` an esoteric programming language created in 1993 by Urban Müller. We can use this `https://www.dcode.fr/brainfuck-language` site to decode it.
+Wow... it's something bizarre, right? It's a `Brainfuck` an esoteric programming language created in 1993 by Urban Müller. We can use this <https://www.dcode.fr/brainfuck-language> site to decode it.
 
 ![decode](/assets/images/thm/year-of-the-rabbit/decode.png)
 
@@ -120,13 +120,13 @@ sudo -l
 
 ![sudo-l](/assets/images/thm/year-of-the-rabbit/sudo-l.png)
 
-We are able to run `/usr/bin/vi /home/gwendoline/user.txt` as all users except root. After some research I have found the following exploit `https://www.exploit-db.com/exploits/47502`. Basically, this flaw allows us to run a command as root by specifying the target user using the numeric id of -1.
+We are able to run `/usr/bin/vi /home/gwendoline/user.txt` as all users except root. After some research I have found the following exploit <https://www.exploit-db.com/exploits/47502>. Basically, this flaw allows us to run a command as root by specifying the target user using the numeric id of -1.
 
 ```
  sudo -u#-1 /usr/bin/vi /home/gwendoline/user.txt
 ```
 
-Based on `https://gtfobins.github.io/gtfobins/vi/` once it opens the vi editor execute the following command.
+Based on <https://gtfobins.github.io/gtfobins/vi/> once it opens the vi editor execute the following command.
 
 ```
 :!/bin/sh
