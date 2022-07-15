@@ -30,7 +30,7 @@ We have found a directory `content`. It's CMS system called SweetRice.
 
 ![content](/assets/images/thm/lazy-admin/content.png)
 
-I searched for any known vulnerabilities in `https://www.exploit-db.com/` but wasn't sure which of the could help.
+I searched for any known vulnerabilities in <https://www.exploit-db.com/> but wasn't sure which of the could help.
 
 ![exploit-db](/assets/images/thm/lazy-admin/exploit-db.png)
 
@@ -52,7 +52,7 @@ Download the mysql backup and see whether we'll be able to find any useful infor
 
 If you look closely you will find username `manager` with hash `42f749ade7f9e195bf475f37a44cafcb` <br/>
 
-I'm going to use `https://crackstation.net/` to crack the password.
+I'm going to use <https://crackstation.net/> to crack the password.
 
 ![crack](/assets/images/thm/lazy-admin/crack.png)
 
@@ -62,7 +62,7 @@ Good, now we have credentials. Go to `as` subdirectory and try to login.
 
 ![welcome](/assets/images/thm/lazy-admin/welcome.png)
 
-Nice, I went back to the exploit db and looked for the apropriate exploit. It's `https://www.exploit-db.com/exploits/40700`. Now from left side menu navigate to Ads. There we'll paste our reverse php code `https://raw.githubusercontent.com/pentestmonkey/php-reverse-shell/master/php-reverse-shell.php` this is a good one. Dont forget to set your ip and port
+Nice, I went back to the exploit db and looked for the apropriate exploit. It's <https://www.exploit-db.com/exploits/40700>. Now from left side menu navigate to Ads. There we'll paste our reverse php code <https://raw.githubusercontent.com/pentestmonkey/php-reverse-shell/master/php-reverse-shell.php> this is a good one. Dont forget to set your ip and port
 
 ![ads](/assets/images/thm/lazy-admin/ads.png)
 
